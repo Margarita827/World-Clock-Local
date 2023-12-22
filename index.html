@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>World Clock</h1>
+
+      <select name="city" id="city">
+        <option value="">Select a city</option>
+        <option value="Europe/Podgorica">Podgorica</option>
+        <option value="Asia/Manila">Manila</option>
+        <option value="America/Bogota">Bogota</option>
+        <option value="Africa/Bissau">Bissau</option>
+        <option value="Pacific/Honolulu">Honolulu</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="montreal">
+          <div>
+            <h2>Montreal</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="canberra">
+          <div>
+            <h2>Canberra</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      This project was coded by
+      <a href="https://github.com/Margarita827/GitHub" target="_blank"
+        >Margarita Ibáñez</a
+      >, open sourced on
+      <a href="https://github.com/Margarita827/2-WCP-Setup" target="_blank"
+        >Github</a
+      >
+      and website hosted on
+      <a
+        href="https://app.netlify.com/sites/resonant-brigadeiros-22c518/overview"
+        >Netlify</a
+      >
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
