@@ -16,9 +16,17 @@ function updateTime() {
 
   montrealDate.innerHTML = montrealCurrentTime.format("MMMM Do YYYY");
   montrealTime.innerHTML = montrealCurrentTime.format("H:mm:ss");
-}
 
-//
+  //
+
+  let tokyo = document.querySelector("#tokyo");
+  let tokyoDate = tokyo.querySelector(".date");
+  let tokyoTime = tokyo.querySelector(".time");
+  let tokyoCurrentTime = moment().tz("Asia/Tokyo");
+
+  tokyoDate.innerHTML = tokyoCurrentTime.format("MMMM Do YYYY");
+  tokyoTime.innerHTML = tokyoCurrentTime.format("H:mm:ss");
+}
 
 //City select
 function updateCity(event) {
